@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Link Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Personal Resource & Link Hub</h1>
+        <p>Type custom categories to automatically group your learning paths</p>
+    </header>
+
+    <div class="form-container">
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" id="title" placeholder="e.g. LeetCode Profile">
+        </div>
+        <div class="form-group">
+            <label>URL</label>
+            <input type="text" id="url" placeholder="https://...">
+        </div>
+        <div class="form-group">
+            <label>Category</label>
+            <input type="text" id="category" placeholder="e.g. Coding, Aptitude, Notes">
+        </div>
+        <button onclick="addResource()">Add New Link</button>
+    </div>
+
+    <div id="container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
